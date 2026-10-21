@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Acervo educacional da Tia Ana Cláudia: materiais, jogos, leituras e atividades.">
+<title>Tia Ana Cláudia — Acervo Educacional</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="topbar">
+    <a class="brand" href="#inicio" aria-label="Início">
+      <span class="brand-mark">A</span>
+      <span><strong>Tia Ana Cláudia</strong><small>Acervo educacional</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#inicio">Início</a><a href="#materiais">Materiais</a><a href="#jogos">Jogos</a><a href="#sobre">Sobre</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </div>
+  <div class="hero" id="inicio">
+    <div class="hero-copy">
+      <span class="eyebrow">APRENDER TAMBÉM PODE SER DIVERTIDO</span>
+      <h1>Conhecimento para explorar,<br><em>descobrir e compartilhar.</em></h1>
+      <p>Uma nova organização para o acervo que nasceu com a Turma 500 — preservando a essência do blog original e facilitando encontrar cada atividade.</p>
+      <div class="hero-actions"><a class="btn primary" href="#materiais">Explorar acervo</a><a class="btn ghost" href="#sobre">Conheça a história</a></div>
+    </div>
+    <div class="hero-card"><div class="hero-card-icon">✦</div><strong>Acervo original</strong><span>Materiais reunidos ao longo dos anos</span><small>Turma 500 · desde 2011</small></div>
+  </div>
+</header>
+
+<main>
+<section class="quick" aria-label="Atalhos">
+  <a href="#materiais"><span>📚</span><div><b>Materiais</b><small>Por área de conhecimento</small></div></a>
+  <a href="#jogos"><span>🎮</span><div><b>Jogos</b><small>Aprender brincando</small></div></a>
+  <a href="#alunos"><span>🧩</span><div><b>Atividades 2020</b><small>Listas por aluno</small></div></a>
+  <a href="#sobre"><span>👩‍🏫</span><div><b>Sobre</b><small>A história da professora</small></div></a>
+</section>
+
+<section class="section intro" id="materiais">
+  <div class="section-heading"><span class="eyebrow">NAVEGUE PELO ACERVO</span><h2>Encontre o que você procura</h2><p>Todos os links recuperados do blog foram reorganizados em categorias. Use a busca para encontrar uma atividade pelo nome.</p></div>
+  <div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Buscar atividade, jogo, livro, tema..." autocomplete="off"><button id="clearSearch" type="button">Limpar</button></div>
+  <div class="category-layout">
+    <aside class="filters" id="filters"><button class="filter active" data-filter="all">Tudo</button></aside>
+    <div class="results"><div class="results-head"><span id="resultsCount"></span><select id="sort"><option value="original">Ordem original</option><option value="az">A–Z</option></select></div><div id="catalog"></div></div>
+  </div>
+</section>
+
+<section class="section featured" id="jogos">
+  <div class="section-heading"><span class="eyebrow">APRENDER BRINCANDO</span><h2>Jogos e experiências</h2><p>As antigas listas de jogos agora ficam agrupadas e pesquisáveis, sem aquela barra lateral interminável.</p></div>
+  <div id="gameCards" class="game-grid"></div>
+</section>
+
+<section class="section original-post">
+  <div class="section-heading"><span class="eyebrow">MEMÓRIA DO BLOG</span><h2>A mensagem da Tia Ana Cláudia</h2><p>O primeiro conteúdo continua preservado, agora em uma apresentação mais confortável para leitura.</p></div>
+  <article class="post-card"><div class="post-meta">24 de fevereiro de 2011</div><h3>Tudo muda quando a gente muda</h3><div id="postContent" class="post-content"></div></article>
+</section>
+
+<section class="section about" id="sobre">
+  <div class="about-card">
+    <div class="portrait" id="portrait" aria-label="Foto de Ana Cláudia Mesquita">A</div>
+    <div><span class="eyebrow">QUEM SOU EU</span>
+      <h2>Ana Cláudia Mesquita</h2><p>Este espaço nasceu para aproximar alunos do conhecimento por caminhos diferentes da sala de aula. A proposta continua sendo a mesma: curiosidade, autonomia, criatividade e alegria em aprender.</p>
+      <a id="profileLink" class="text-link" target="_blank" rel="noopener">Ver Blogg original →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section students" id="alunos">
+  <div class="section-heading"><span class="eyebrow">ACERVO DOS ALUNOS</span><h2>Atividades de 2020</h2><p>As listas individuais do blog original foram preservadas aqui como um arquivo histórico.</p></div>
+  <div id="studentGrid" class="student-grid"></div>
+</section>
+</main>
+
+<footer class="footer"><div><strong>Tia Ana Cláudia</strong><p>Acervo educacional reconstruído a partir do conteúdo público do blog original.</p></div><div class="footer-links"><a href="#inicio">Início</a><a href="#materiais">Materiais</a><a href="#jogos">Jogos</a><a href="#sobre">Sobre</a></div><small>Projeto estático independente do Blogger · conteúdo original preservado</small></footer>
+<script src="data.js"></script><script src="script.js"></script>
+</body></html>
